@@ -1,0 +1,7 @@
+{
+  "name": "Weather Fusion AI",
+  "content_in_root": false,
+  "render_readme": true,
+  "domains": ["weather", "sensor"],
+  "homeassistant": "2024.1.0"
+}
