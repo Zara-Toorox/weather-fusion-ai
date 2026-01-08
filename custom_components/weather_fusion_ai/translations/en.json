@@ -77,8 +77,8 @@
       "forecast_accuracy": {
         "name": "Forecast Accuracy"
       },
-      "learning_days": {
-        "name": "Learning Days"
+      "learning_progress": {
+        "name": "Learning Progress"
       },
       "active_sources": {
         "name": "Active Weather Sources"
