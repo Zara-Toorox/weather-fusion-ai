@@ -49,7 +49,8 @@
     "error": {
       "invalid_latitude": "Breitengrad muss zwischen -90 und 90 liegen",
       "invalid_longitude": "Längengrad muss zwischen -180 und 180 liegen",
-      "cannot_connect": "Verbindung zu Wetterdiensten fehlgeschlagen"
+      "cannot_connect": "Verbindung zu Wetterdiensten fehlgeschlagen",
+      "no_sensors": "Mindestens ein Wettersensor ist erforderlich. Diese Integration lernt von deiner lokalen Wetterstation, um Vorhersagen zu verbessern."
     },
     "abort": {
       "already_configured": "Dieser Standort ist bereits konfiguriert"

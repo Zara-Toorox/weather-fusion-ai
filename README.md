@@ -1,6 +1,6 @@
 # Weather Fusion AI - Multi-Source Local Weather Learning
 
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/Zara-Toorox/weather-fusion-ai)
+[![Version](https://img.shields.io/badge/version-2.4.0-blue.svg)](https://github.com/Zara-Toorox/weather-fusion-ai)
 [![HACS](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://hacs.xyz/)
 [![License](https://img.shields.io/badge/license-Proprietary%20Non--Commercial-green.svg)](LICENSE)
 
