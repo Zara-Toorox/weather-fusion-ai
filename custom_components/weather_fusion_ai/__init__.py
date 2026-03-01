@@ -37,6 +37,7 @@ from pathlib import Path
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.const import Platform
 from homeassistant.core import HomeAssistant
+from homeassistant.helpers.update_coordinator import UpdateFailed
 
 from .const import (
     DOMAIN,
@@ -76,17 +77,25 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     # Initialize coordinator (loads caches, sets up experts)
     await coordinator.async_initialize()
 
-    # First data fetch
-    await coordinator.async_config_entry_first_refresh()
-
-    # Store coordinator for platforms
+    # Store coordinator for platforms BEFORE first refresh
+    # This ensures platforms are always set up, even if the first API call fails.
+    # Without this, a cold-start API failure prevents entity registration,
+    # causing "entity no longer provided" errors after HA restart.
     hass.data[DOMAIN][entry.entry_id] = {
         "coordinator": coordinator,
         "data_dir": data_dir,
     }
 
-    # Set up platforms (weather, sensor)
+    # Set up platforms first so entities are always registered
     await hass.config_entries.async_forward_entry_setups(entry, PLATFORMS)
+
+    # First data fetch - non-blocking: if it fails, coordinator retries automatically
+    try:
+        await coordinator.async_config_entry_first_refresh()
+    except Exception:
+        _LOGGER.warning(
+            "Initial weather data fetch failed - will retry on next update cycle"
+        )
 
     # Register update listener for options changes
     entry.async_on_unload(entry.add_update_listener(async_update_options))

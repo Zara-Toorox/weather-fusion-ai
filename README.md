@@ -34,7 +34,7 @@ Your location. Your data. Your AI. Weather Fusion AI combines multiple independe
 
 ## 🌦️ Stop Guessing. Start Knowing.
 
-<img src="custom_components/weather_fusion_ai/brand/logo@2x.png" alt="Weather Fusion AI — Multi-Source Local Weather Intelligence" align="left" width="250">
+<img src="pictures/weather_fusion_logo.png" alt="Weather Fusion AI — Multi-Source Local Weather Intelligence" align="left" width="250">
 
 While others display generic regional forecasts, Weather Fusion AI treats each weather source as an independent **expert** and blends them with cloud-type-specific learned weights. It extends the proven **Hybrid AI architecture from Solar Forecast ML** — the pioneer of local AI in Home Assistant — to general weather forecasting for the first time.
 
@@ -61,7 +61,7 @@ Most weather integrations simply display a single provider's forecast. They don'
 
 ## 🏗️ The Expert Blending Architecture
 
-<img src="custom_components/weather_fusion_ai/brand/icon@2x.png" alt="Weather Fusion AI Architecture" align="left" width="200">
+<img src="pictures/weather_fusion_icon.png" alt="Weather Fusion AI Architecture" align="left" width="200">
 
 The heart of Weather Fusion AI is a multi-expert blending system that treats each weather source as a specialized forecaster. Instead of trusting a single source, the system learns which expert performs best under which conditions — and blends them accordingly.
 
