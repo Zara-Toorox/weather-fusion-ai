@@ -15,7 +15,7 @@ from typing import Final
 
 DOMAIN: Final = "weather_fusion_ai"
 NAME: Final = "Weather Fusion AI"
-VERSION: Final = "8.0.0"
+VERSION: Final = "28.0.0"
 
 # Config keys
 CONF_LOCATION_NAME: Final = "location_name"

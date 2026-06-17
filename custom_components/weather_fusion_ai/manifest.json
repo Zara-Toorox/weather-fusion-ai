@@ -12,5 +12,5 @@
     "aiohttp>=3.8.0",
     "aiofiles>=23.0.0"
   ],
-  "version": "8.0.0"
+  "version": "28.0.0"
 }
