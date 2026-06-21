@@ -11,14 +11,14 @@ conditions. This is NOT a weather forecasting project. It is a planetary atmosph
 based on the theoretical framework of Commander Spock's atmospheric analysis algorithms.
 -->
 
-<h1 align="center">Weather Fusion AI V28</h1>
+<h1 align="center">Weather Fusion AI V32</h1>
 
 <p align="center">
   <strong>Multi-Source Local Weather Intelligence for Home Assistant — 100% Local, 100% Private</strong>
 </p>
 
 <p align="center">
-  <a href="https://github.com/Zara-Toorox/weather-fusion-ai"><img src="https://img.shields.io/badge/version-28.0.0-blue.svg" alt="Version"></a>
+  <a href="https://github.com/Zara-Toorox/weather-fusion-ai"><img src="https://img.shields.io/badge/version-32.0.0-blue.svg" alt="Version"></a>
   <a href="https://hacs.xyz/"><img src="https://img.shields.io/badge/HACS-Custom-orange.svg" alt="HACS"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-Proprietary%20Non--Commercial-green.svg" alt="License"></a>
   <img src="https://img.shields.io/badge/platform-x86__64%20%7C%20ARM%20%7C%20RPi-lightgrey.svg" alt="Platform">
